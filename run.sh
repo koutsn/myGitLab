@@ -1,10 +1,7 @@
-#
-# WARNING: This will delete the existing container and all existing configurations and data will be lost
-#
 export GITLAB_HOME=$HOME
 
-docker stop gitlab
-docker rm gitlab
+#docker stop gitlab
+#docker rm gitlab
 
 docker run --detach \
   --hostname localhost \
