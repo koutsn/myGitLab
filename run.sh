@@ -1,4 +1,8 @@
 export GITLAB_HOME=$HOME
+
+docker stop gitlab
+docker rm gitlab
+
 docker run --detach \
   --hostname localhost \
   --env GITLAB_OMNIBUS_CONFIG="external_url 'http://localhost:8929'" \
