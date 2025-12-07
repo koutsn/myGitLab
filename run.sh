@@ -1,5 +1,5 @@
 export GITLAB_HOME=$HOME
-docker run --privileged --detach \
+docker run --detach \
   --hostname localhost \
   --env GITLAB_OMNIBUS_CONFIG="external_url 'http://localhost:8929'" \
   --publish 443:443 --publish 8929:8929 --publish 22:22 \
