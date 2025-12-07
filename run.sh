@@ -14,3 +14,6 @@ docker run --detach \
 docker exec -it gitlab update-permissions
 
 read -n 1 -s -r -p "Press any key to continue..."
+
+# find root password:
+#cat /etc/gitlab/initial_root_password
