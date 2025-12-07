@@ -1,3 +1,6 @@
+#
+# WARNING: This will delete the existing container and all existing configurations and data will be lost
+#
 export GITLAB_HOME=$HOME
 
 docker stop gitlab
